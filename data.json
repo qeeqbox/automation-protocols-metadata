@@ -1,7 +1,7 @@
 {
   "license": "Giga Alqeeq (Contact me at gigaqeeq@gmail.com)",
   "project": "QeeqBox automation-protocols-metadata",
-  "info": "This database was compiled using my previous experience with ICS and a lot of great articles\\researches\\projects (Do not forget to check them out!)",
+  "info": "This file was compiled using my previous experience with ICS and a lot of great articles\\researches\\projects (Do not forget to check them out!)",
   "main": [{
       "refs": {
         "wiki": "https://en.wikipedia.org/wiki/1-Wire"
@@ -1007,904 +1007,552 @@
     }
   ],
   "sub": [{
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/1-Wire"
-      },
-      "name": "1-Wire",
-      "groups": [
-        "Building automation protocols"
+      "name": "AC500",
+      "company": "ABB",
+      "ports": [
+        "502",
+        "1201"
       ],
-      "info": "1-Wire is a device communications bus system designed by Dallas Semiconductor Corp. that provides low-speed (16.3 kbit/s) data, signaling, and power over a single conductor.\n1-Wire is similar in concept to I\u00b2C, but with lower data rates and longer range. It is typically used to communicate with small inexpensive devices such as digital thermometers and weather instruments. A network of 1-Wire devices with an associated master device is called a MicroLAN. The protocol is also used in small electronic keys known as a Dallas key or iButton.\nOne distinctive feature of the bus is the possibility of using only two wires \u2014 data and ground. To accomplish this, 1-Wire devices include an 800 pF capacitor to store charge and power the device during periods when the data line is active. - (wikipedia)"
+      "refs": {
+        "link_1": "https://new.abb.com/plc/programmable-logic-controllers-plcs/ac500"
+      }
     },
     {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/ANSI_C12.22",
-        "wireshark": "https://wiki.wireshark.org/C12.22"
-      },
-      "name": "ANSI C12.22",
-      "groups": [
-        "Automatic meter reading protocol"
-      ],
+      "name": "ACR9000",
+      "company": "Parker",
       "ports": [
-        "1153"
+        "5006"
       ],
-      "info": "ANSI C12.22 is the American National Standard for Protocol Specification for Interfacing to Data Communication Networks\nANSI C12.22/IEEE Std 1703 describe a protocol for transporting ANSI C12.19 table data over networks, for the purpose of interoperability among communications modules and meters. This standard uses AES encryption to enable strong, secure communications, including confidentiality and data integrity. The cipher mode used, a derivation of EAX mode called EAX' (EAX prime), is provably secure in the context of C12.22.  However, this cipher mode cannot be used securely for non-standard short messages (messages less than the key length of 16 bytes). Its security model is extensible to support new security mechanisms.\nANSI C12.22/IEEE Std 1703 define message services which are components of an Advanced Metering Infrastructure (AMI) for smart grids.\nThere is also RFC 6142 for transporting C12.22 data using TCP and UDP transport over IP networks.\nThe ANSI C12.22 / IEEE Std 1703 service and domains consist of ANSI C12.22 / IEEE Std 1703 Network Segments and ANSI C12.22 / IEEE Std 1703 Nodes that are managed by distributed trusted centers, network relays and gateways. As smart grid AMI networks evolve, ANSI C12.22 / IEEE 1703 domains may be created to service the utilities' Field Area Networks (FAN) and the Home/Premise Area Networks (HAN/PAN). Nodes that operate in these domains must be registered with unique application title names (ApTitles) that need to be registered (ECMX). - (wikipedia)"
+      "refs": {
+        "link_1": "https://www.parkermotion.com/products/Controllers__6934__30_32_80_567_29.html"
+      }
     },
     {
-      "refs": {
-        "nmap": "https://github.com/digitalbond/Redpoint/blob/master/atg-info.nse"
-      },
-      "name": "ATG",
-      "groups": [
-        "other"
-      ],
+      "name": "CLICK",
+      "company": "KOYO",
       "ports": [
-        "10001"
+        "25425"
+      ],
+      "refs": {
+        "link_1": "https://www.automationdirect.com/microsites/clickplcs/click-help/Content/201.htm"
+      }
+    },
+    {
+      "name": "CTH300-H",
+      "company": "CO-TRUST",
+      "ports": [
+        "1024"
+      ],
+      "refs": {
+        "link_1": "http://en.co-trust.com/Products/Programmable/CTH300/desc.html"
+      }
+    },
+    {
+      "name": "CompactLogix, ControlLogix, FlexLogix, MicroLogix, etc..",
+      "company": "Rockwell Automation - Allen Bradley",
+      "ports": [
+        "2222",
+        "44818"
       ]
     },
     {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/AS-Interface"
-      },
-      "name": "Actuator-sensor interface (AS-i)",
-      "groups": [
-        "Process automation protocols"
-      ],
-      "info": "Actuator Sensor Interface (AS-Interface or ASi) is an industrial networking solution (physical layer, data access method and protocol) used in PLC, DCS and PC-based automation systems. It is designed for connecting simple field I/O devices (e.g. binary ON/OFF devices such as actuators, sensors, rotary encoders, analog inputs and outputs, push buttons, and valve position sensors) in discrete manufacturing and process applications using a single two-conductor cable.\nAS-Interface is an 'open' technology supported by a multitude of automation equipment vendors. The AS-Interface has been an international standard according to IEC 62026-2 since 1999.\nAS-Interface is a networking alternative to the hard wiring of field devices. It can be used as a partner network for higher level fieldbus networks such as Profibus, DeviceNet, Interbus and Industrial Ethernet, for whom it offers a low-cost remote I/O solution. It is used in automation applications, including conveyor control, packaging machines (e.g. Schubert's), process control valves, bottling plants, electrical distribution systems, airport baggage carousels, elevators, bottling lines and food production lines (e.g. 2SFG). AS-Interface provides a basis for Functional Safety in machinery safety/emergency stop applications. Safety devices communicating over AS-Interface follow all the normal AS-Interface data rules. The AS-Interface specification is managed by AS-International, a member funded non-profit organization located in Gelnhausen/Germany. Several international subsidiaries exist around the world. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol",
-        "wireshark": "https://wiki.wireshark.org/AMQP"
-      },
-      "name": "Advanced Message Queuing Protocol (AMQP)",
-      "groups": [
-        "General"
-      ],
-      "ports": [
-        "5671",
-        "5672"
-      ],
-      "info": "The Advanced Message Queuing Protocol (AMQP) is an open standard application layer protocol for message-oriented middleware. The defining features of AMQP are message orientation, queuing, routing (including point-to-point and publish-and-subscribe), reliability and security.AMQP mandates the behavior of the messaging provider and client to the extent that implementations from different vendors are interoperable, in the same way as SMTP, HTTP, FTP, etc. have created interoperable systems. Previous standardizations of middleware have happened at the API level (e.g. JMS) and were focused on standardizing programmer interaction with different middleware implementations, rather than on providing interoperability between multiple implementations. Unlike JMS, which defines an API and a set of behaviors that a messaging implementation must provide, AMQP is a wire-level protocol. A wire-level protocol is a description of the format of the data that is sent across the network as a stream of bytes. Consequently, any tool that can create and interpret messages that conform to this data format can interoperate with any other compliant tool irrespective of implementation language. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "nmap": "https://nmap.org/nsedoc/scripts/bacnet-info.html",
-        "wireshark": "https://wiki.wireshark.org/Protocols/bacnet"
-      },
-      "name": "BACNET",
-      "groups": [
-        "Building automation protocols",
-        "Fieldbus"
-      ],
-      "ports": [
-        "47808",
-        "47809",
-        "47810",
-        "47811",
-        "47812",
-        "47813",
-        "47814",
-        "47815",
-        "47816",
-        "47817",
-        "47818",
-        "47819",
-        "47820",
-        "47821",
-        "47822",
-        "47823"
-      ]
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/BatiBUS"
-      },
-      "name": "BatiBus",
-      "groups": [
-        "Building automation protocols"
-      ],
-      "info": "BatiBus was a network protocol for building automation that was introduced in 1989 and has since been succeeded by KNX. It was a relatively simple low-cost protocol that did not rely on dedicated chips.The system was run by the BatiBus Club International (BCI), which was founded by the Swiss company Landis & Gyr and the French companies AIRELEC, Electricit\u00e9 de France and Merlin Gerin (who originated the concept). Predominately used in France and captured by French Electrical Standard NF C 46620, it provided layers 1, 2 and 7 of the OSI model. Approximately 500,000 BatiBus network units were installed, mainly in France.\nBatiBus communicated over twisted pair lines and in topologies that could be divided into several segments. Each segment was powered with a 15 volt power supply rated at 150 milliamps. A device (node) could be reached at one of 240 possible addresses. In addition, 16 group addresses could be established under which all nodes in a group could be reached. The nodes avoided data collisions via CSMA/CA and had data flow controls. The maximum data transfer rate was 4800 bits/s.\n\n - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Bristol_Standard_Asynchronous_Protocol"
-      },
-      "name": "Bristol Synchronous/Asynchronous Protocol (BSAP)",
-      "groups": [
-        "Process automation protocols"
-      ],
-      "ports": [
-        "1234"
-      ],
-      "info": "Bristol Standard Asynchronous/Synchronous Protocol (BSAP) is an industrial automation protocol developed by Bristol Babcock and managed by Emerson. It is a master-slave protocol suited to both synchronous high speed local networks and asynchronous low speed wide area networks. BSAP offers high message security for communication over telephone lines and radio networks by using effective error checking method (16 bit CRC-CCITT) and constantly exchanging the communication statistics. The polling scheme used by BSAP makes sure that each node in the network has an equal priority for requests and responses. BSAP also provides a mechanism of global addressing of all nodes connected for special messages like time synchronization apart from the normal individual addressing schemes. BSAP supports remote database access methods for reading and writing the memory in groups. It also supports multiple messaging schemes in which each node can transfer the node to other networks transparently and can transmit the responses in similar manner. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/C-Bus_(protocol)",
-        "wireshark": "https://www.wireshark.org/docs/dfref/c/can.html"
-      },
-      "name": "C-Bus",
-      "groups": [
-        "Building automation protocols"
-      ],
-      "info": "C-Bus is a communications protocol based on a seven layer OSI model for home and building automation that can handle cable lengths up to 1000 metres using Cat-5 cable.  It is used in Australia, New Zealand, Asia, the Middle East, Russia, United States, South Africa, the UK and other parts of Europe including Greece and Romania.  C-Bus was created by Clipsal Australia's Clipsal Integrated Systems division (now part of Schneider Electric) for use with its brand of home automation and building lighting control system. C-Bus has been briefly available in the United States but Schneider Electric has now discontinued sales in the United States.C-Bus is used in the control of domotics, or home automation systems, as well as commercial building lighting control systems.\nUnlike the more common X10 protocol which uses a signal imposed upon the AC power line, C-Bus uses a dedicated low-voltage cable or two-way wireless network to carry command and control signals. This improves the reliability of command transmission and makes C-Bus far more suitable for large, commercial applications than X10. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wireshark": "https://wiki.wireshark.org/CANopen"
-      },
-      "name": "CANopen",
-      "groups": [
-        "Process automation protocols"
-      ],
-      "ports": [
-        "7234"
-      ]
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/CC-Link_Open_Automation_Networks"
-      },
-      "name": "CC-Link Open Automation Networks",
-      "groups": [
-        "Process automation protocols",
-        "Building automation protocols"
-      ],
-      "info": "The CC-Link Open Automation Networks Family are a group of open industrial networks that enable devices from numerous manufacturers to communicate.  They are used in a wide variety of industrial automation applications at the machine, cell and line levels. - (wikipedia)"
-    },
-    {
-      "name": "CODESYS",
-      "groups": [
-        "other"
-      ],
-      "ports": [
-        "1740",
-        "1741",
-        "1742",
-        "1743",
-        "1217",
-        "11740",
-        "2455"
-      ]
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Common_Industrial_Protocol",
-        "wireshark": "https://www.wireshark.org/docs/dfref/c/cip.html"
-      },
-      "name": "Common Industrial Protocol (CIP)",
-      "groups": [
-        "groups"
-      ],
-      "info": "The Common Industrial Protocol (CIP) is an industrial protocol for industrial automation applications. It is supported by ODVA.\nPreviously known as Control and Information Protocol, CIP encompasses a comprehensive suite of messages and services for the collection of manufacturing automation applications \u2013 control, safety, synchronization, motion, configuration and information. It allows users to integrate these manufacturing applications with enterprise-level Ethernet networks and the Internet. It is supported by hundreds of vendors around the world, and is media-independent. CIP provides a unified communication architecture throughout the manufacturing enterprise. It is used in EtherNet/IP, DeviceNet, CompoNet and ControlNet.\nODVA is the organization that supports network technologies built on the Common Industrial Protocol (CIP). These also currently include application extensions to CIP: CIP Safety, CIP Motion and CIP Sync.\n\n - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wireshark": "https://www.wireshark.org/docs/dfref/c/coap.html"
-      },
-      "name": "Constrained Application Protocol (CoAP) ",
-      "groups": [
-        "other"
-      ],
-      "ports": [
-        "5683"
-      ]
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/ControlNet"
-      },
-      "name": "ControlNet",
-      "groups": [
-        "Process automation protocols",
-        "Common Industrial Protocol (CIP)"
-      ],
-      "info": "ControlNet is an open industrial network protocol for industrial automation applications, also known as a fieldbus.  ControlNet was earlier supported by ControlNet International, but in 2008 support and management of ControlNet was transferred to ODVA, which now manages all protocols in the Common Industrial Protocol family.\nFeatures which set ControlNet apart from other fieldbuses include the built-in support for fully redundant cables and the fact that communication on ControlNet can be strictly scheduled and highly deterministic. Due to the unique physical layer, common network sniffers such as Wireshark cannot be used to sniff ControlNet packets. Rockwell Automation provides ControlNet Traffic Analyzer software to sniff and analyze ControlNet packets. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wireshark": "https://wiki.wireshark.org/Contrib"
-      },
-      "name": "Crimson V3",
-      "groups": [
-        "other"
-      ],
-      "ports": [
-        "789"
-      ]
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/DF-1_Protocol"
-      },
-      "name": "DF1 Protocol",
-      "groups": [
-        "Process automation protocols"
-      ],
-      "info": "DF-1 / DF1 protocol is an asynchronous byte-oriented protocol that is used to communicate with most Allen Bradley RS232 interface modules. DF1 protocol consists of link layer and application layer formats. DF1 works over half duplex and full duplex modes of communication. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/DNP3",
-        "wireshark": "https://www.wireshark.org/docs/dfref/d/dnp3.html"
-      },
-      "name": "DNP3",
-      "groups": [
-        "Process automation protocols",
-        "Power system automation protocols"
-      ],
-      "ports": [
-        "20000"
-      ],
-      "info": "Distributed Network Protocol 3 (DNP3) is a set of communications protocols used between components in process automation systems. Its main use is in utilities such as electric and water companies. Usage in other industries is not common. It was developed for communications between various types of data acquisition and control equipment.  It plays a crucial role in SCADA systems, where it is used by SCADA Master Stations (a.k.a. Control Centers), Remote Terminal Units (RTUs), and Intelligent Electronic Devices (IEDs).  It is primarily used for communications between a master station and RTUs or IEDs.  ICCP, the Inter-Control Center Communications Protocol (a part of IEC 60870-6), is used for inter-master station communications. Competing standards include the older Modbus protocol and the newer IEC 61850 protocol. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/DeviceNet"
-      },
-      "name": "DeviceNet",
-      "groups": [
-        "Process automation protocols",
-        "Common Industrial Protocol (CIP)"
-      ],
-      "info": "DeviceNet is a network protocol used in the automation industry to interconnect control devices for data exchange. It utilizes the Common Industrial Protocol over a Controller Area Network media layer and defines an application layer to cover a range of device profiles.  Typical applications include information exchange, safety devices, and large I/O control networks. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Digital_Addressable_Lighting_Interface"
-      },
-      "name": "Digital Addressable Lighting Interface (DALI)",
-      "groups": [
-        "Building automation protocols"
-      ],
-      "info": "Digital Addressable Lighting Interface (DALI) is a trademark for network-based products that control lighting. The underlying technology was established by a consortium of lighting equipment manufacturers as a successor for 1-10 V/0\u201310 V lighting control systems, and as an open standard alternative to several proprietary protocols. The DALI, DALI-2 and D4i trademarks are owned by the lighting industry alliance, DiiA (Digital Illumination Interface Alliance).\nDALI is specified by a series of technical standards in IEC 62386. Standards conformance ensures that equipment from different manufacturers will interoperate. The DALI trademark is allowed on devices that comply with the DiiA testing and certification requirements, and are listed as either registered (DALI version-1) or certified (DALI-2) on the DiiA website. D4i certification  - an extension of DALI-2 - was added by DiiA in November 2019.\nMembers of the AG DALI were allowed to use the DALI trademark until the DALI working party was dissolved on 30 March 2017, when trademark use was transferred to DiiA members. Since 9 June 2017, Digital Illumination Interface Alliance (DiiA) certifies DALI products. DiiA is a Partner Program of IEEE-ISTO. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Digital_Serial_Interface"
-      },
-      "name": "Digital Serial Interface (DSI)",
-      "groups": [
-        "Building automation protocols"
-      ],
-      "info": "Digital Serial Interface (DSI) is a protocol for the controlling of lighting in buildings (initially electrical ballasts).  It was created in 1991  by Austrian company Tridonic and is based on Manchester-coded 8-bit protocol, data rate of 1200 baud, 1 start bit, 8 data bits (dimming value), 4 stop bits, and is the basis of the more sophisticated protocol Digital Addressable Lighting Interface (DALI).\nThe technology uses a single byte to communicate the lighting level (0-255 or 0x00-0xFF). DSI was the first use of digital communication in lighting control, and was the precursor to DALI. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/DirectNET_Protocol"
-      },
-      "name": "DirectNET",
-      "groups": [
-        "Process automation protocols"
-      ],
-      "ports": [
-        "28784"
-      ],
-      "info": "Koyo DirectNET protocol is used by DirectLOGIC PLCs from Automation Direct and is used in APS vacuum controls since 1999. It is a master/slave protocol making use of RS-232 or RS-422 physical layers with a baud rate from 300 to 38,400. It is designed to drive a maximum of 90 PLCs on a serial line. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Dynalite#Communications"
-      },
-      "name": "DyNet 1",
-      "groups": [
-        "Building automation protocols"
-      ],
-      "info": "Dynalite is a lighting and automation control system developed in Sydney, Australia by a company of the same name. In 2009 the company was bought by Philips to become Philips-Dynalite. The system is commonly used for lighting control, building automation, home automation and room automation applications and is sold worldwide.\n\n - (wikipedia)"
-    },
-    {
-      "ports": [
-        "3671"
-      ],
-      "refs": {
-        "wireshark": "https://www.wireshark.org/docs/dfref/k/knx.html"
-      },
-      "groups": [
-        "KNX",
-        "Fieldbus"
-      ],
-      "name": "EIBnet/IP or KNXnet/IP"
-    },
-    {
-      "refs": {
-        "nmap": "https://nmap.org/nsedoc/scripts/enip-info.html",
-        "wiki": "https://en.wikipedia.org/wiki/EtherNet/IP",
-        "wireshark": "https://www.wireshark.org/docs/dfref/e/etherip.html"
-      },
-      "name": "EIP\\EtherNet/IP",
-      "groups": [
-        "Process automation protocols",
-        "Common Industrial Protocol (CIP)"
-      ],
-      "ports": [
-        "44818",
-        "2221",
-        "2222"
-      ],
-      "info": "EtherNet/IP (IP = Industrial Protocol) is an industrial network protocol that adapts the Common Industrial Protocol (CIP) to standard Ethernet.  EtherNet/IP is one of the leading industrial protocols in the United States and is widely used in a range of industries including factory, hybrid and process. The EtherNet/IP and CIP technologies are managed by ODVA, Inc., a global trade and standards development organization founded in 1995 with over 300 corporate members.\nEtherNet/IP uses both of the most widely deployed collections of Ethernet standards \u2013the Internet Protocol suite and IEEE 802.3 \u2013 to define the features and functions for its transport, network, data link and physical layers. EtherNet/IP performs at level session and above (level 5, 6 and 7) of the OSI model. CIP uses its object-oriented design to provide EtherNet/IP with the services and device profiles needed for real-time control applications and to promote consistent implementation of automation functions across a diverse ecosystem of products. In addition, EtherNet/IP adapts key elements of Ethernet\u2019s standard capabilities and services to the CIP object model framework, such as the User Datagram Protocol  (UDP), which EtherNet/IP uses to transport I/O messages.\nEthernet/IP was estimated to have about 30% share of the industrial ethernet market in 2010 and 2018.\n\n - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/EnOcean"
-      },
-      "name": "EnOcean",
-      "groups": [
-        "Building automation protocols"
-      ],
-      "info": "The EnOcean technology is an energy harvesting wireless technology used primarily in building automation systems, and is also applied to other applications in industry, transportation, logistics and smart homes. Modules based on EnOcean technology combine micro energy converters with ultra low power electronics, and enable wireless communications between batteryless wireless sensors, switches, controllers and gateways. \nIn March 2012, the EnOcean wireless standard was ratified as the international standard ISO/IEC 14543-3-10. The standard covers the OSI (Open Systems Interconnection) layers 1-3 which are the physical, data link and networking layers. \nThe energy harvesting wireless modules are manufactured and marketed by the company EnOcean which is based in Oberhaching, Germany. EnOcean offers its technology and licenses for the patented features within the EnOcean Alliance framework. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wireshark": "https://wiki.wireshark.org/EtherSBus"
-      },
-      "name": "Ether-S-Bus",
-      "groups": [
-        "Fieldbus"
-      ],
-      "ports": [
-        "5050"
-      ]
-    },
-    {
-      "refs": {
-        "wireshark": "https://wiki.wireshark.org/EtherSIO"
-      },
-      "name": "Ether-S-I/O",
-      "groups": [
-        "Fieldbus"
-      ],
-      "ports": [
-        "6060"
-      ]
-    },
-    {
-      "refs": {
-        "wireshark": "https://wiki.wireshark.org/Protocols/ethercat"
-      },
-      "name": "Ethercat",
-      "groups": [
-        "Fieldbus"
-      ],
-      "ports": [
-        "34980"
-      ]
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/European_Home_Systems_Protocol"
-      },
-      "name": "European Home Systems (EHS) ",
-      "groups": [
-        "Building automation protocols"
-      ],
-      "info": "European Home Systems (EHS) Protocol was a communication protocol aimed at home appliances control and communication using power line communication (PLC), developed by the European Home Systems Association (EHSA).\nAfter merging with two other protocols, it is a part of the KNX standard, which complies with the European Committee for Electrotechnical Standardization (CENELEC) norm EN 50090 and has a chance to be a basis for the first open standard for home and building control. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "link_1": "https://www.jema-net.or.jp/English/businessfields/standarization/opcn/standard/data/fl_net.pdf"
-      },
-      "name": "FA link protocol (FL-net)",
-      "groups": [
-        "other"
-      ],
-      "ports": [
-        "55000",
-        "55001",
-        "55002",
-        "55003"
-      ]
-    },
-    {
-      "refs": {
-        "wireshark": "https://en.wikipedia.org/wiki/Fieldbus_Foundation"
-      },
-      "name": "FF HSE",
-      "groups": [
-        "Fieldbus"
-      ],
-      "ports": [
-        "1089",
-        "1090",
-        "1091"
-      ]
-    },
-    {
-      "refs": {
-        "nmap": "https://nmap.org/nsedoc/scripts/omron-info.html",
-        "wiki": "https://en.wikipedia.org/wiki/Factory_Interface_Network_Service",
-        "wireshark": "https://wiki.wireshark.org/OMRON-FINS"
-      },
-      "name": "Factory Interface Network Service (FINS)",
-      "groups": [
-        "Process automation protocols",
-        "Fieldbus"
-      ],
-      "ports": [
-        "9600"
-      ],
-      "info": "FINS, Factory Interface Network Service, is a network protocol used by Omron PLCs, over different physical networks like Ethernet, Controller Link, DeviceNet and RS-232C. \nThe FINS communications service was developed by Omron to provide a consistent way for PLCs and computers on various networks to communicate. Compatible network types include Ethernet, Host Link, Controller Link, SYSMAC LINK, SYSMAC WAY, and Toolbus. FINS allows communications between nodes up to three network levels. A direct connection between a computer and a PLC via Host Link is not considered a network level. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Fieldbus",
-        "wireshark": "https://wiki.wireshark.org/FieldbusProtocolFamily"
-      },
-      "name": "Fieldbus",
-      "groups": [
-        "groups"
-      ],
-      "info": "Fieldbus is the name of a family of industrial computer networks used for real-time distributed control. Fieldbus profiles are standardized by the \nInternational Electrotechnical Commission (IEC) as IEC 61784/61158.\nA complex automated industrial system is typically structured in hierarchical levels as a distributed control system (DCS). In this hierarchy the upper levels for production managements are linked to the direct control level of programmable logic controllers (PLC) via a non-time-critical communications system (e.g. Ethernet). The fieldbus links the PLCs of the direct control level to the components in the plant of the field level such as sensors, actuators, electric motors, console lights, switches, valves and contactors and replaces the direct connections via current loops or digital I/O signals. The requirement for a fieldbus are therefore time-critical and cost sensitive. Since the new millennium a number of fieldbuses based on Real-time Ethernet have been established. These have the potential to replace traditional fieldbuses in the long term. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Highway_Addressable_Remote_Transducer_Protocol",
-        "wireshark": "https://wiki.wireshark.org/HART-IP"
-      },
-      "name": "Highway Addressable Remote Transducer Protocol - HART",
-      "groups": [
-        "Process automation protocols",
-        "Fieldbus"
-      ],
-      "ports": [
-        "5094"
-      ],
-      "info": "The HART Communication Protocol (Highway Addressable Remote Transducer) is a hybrid analog+digital industrial automation open protocol. Its most notable advantage is that it can communicate over legacy 4\u201320 mA analog instrumentation current loops, sharing the pair of wires used by the analog-only host systems. HART is widely used in process and instrumentation systems ranging from small automation applications up to highly sophisticated industrial applications.\nAccording to Emerson, due to the huge installation base of 4\u201320 mA systems throughout the world, the HART Protocol is one of the most popular industrial protocols today. HART protocol has made a good transition protocol for users who wished to use the legacy 4\u201320 mA signals, but wanted to implement a \"smart\" protocol.\nThe protocol was developed by Rosemount Inc., built off the Bell 202 early communications standard in the mid-1980s as a proprietary digital communication protocol for their smart field instruments. Soon it evolved into HART and in 1986 it was made an open protocol. Since then, the capabilities of the protocol have been enhanced by successive revisions to the specification.\n\n - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/HostLink_Protocol"
-      },
-      "name": "HostLink",
-      "groups": [
-        "Process automation protocols"
-      ],
-      "info": "HostLink is communication protocol for use with or between PLC's made by Omron. It is an ASCII-based protocol generally used for communication over RS232 or RS422. The protocol enables communication between various pieces of equipment in an industrial environment for programming or controlling those pieces of equipment.\nThe maximum allowed message size is 30 words per message. Larger messages can be sent by 'fragmentation' process, where the same slave returns a series of messages to build up the entire response. PLC host computers can transfer procedures, and monitor PLC data area, and control the PLC using the HostLink protocol. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "nmap": "https://nmap.org/nsedoc/scripts/s7-info.html",
-        "wireshark": "https://wiki.wireshark.org/S7comm"
-      },
-      "name": "ICCP\\S7 (S7comm)",
-      "groups": [
-        "other"
-      ],
-      "ports": [
-        "102"
-      ]
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/IEC_60870-5",
-        "wireshark": "https://www.wireshark.org/docs/dfref/1/104asdu.html"
-      },
-      "name": "IEC-60870",
-      "groups": [
-        "Power system automation protocols"
-      ],
-      "ports": [
-        "2404"
-      ],
-      "info": "IEC 60870 part 5  is one of the IEC 60870 set of standards which define systems used for telecontrol (supervisory control and data acquisition) in electrical engineering and power system automation applications. Part 5 provides a communication profile for sending basic telecontrol messages between two systems, which uses permanent directly connected data circuits between the systems. The IEC Technical Committee 57 (Working Group 03) have developed a protocol standard for telecontrol, teleprotection, and associated telecommunications for electric power systems. The result of this work is IEC 60870-5. Five documents specify the base IEC 60870-5:\n\nIEC 60870-5-1 Transmission Frame Formats\nIEC 60870-5-2 Data Link Transmission Services\nIEC 60870-5-3 General Structure of Application Data\nIEC 60870-5-4 Definition and Coding of Information Elements\nIEC 60870-5-5 Basic Application Functions\nIEC 60870-5-6 Guidelines for conformance testing for the IEC 60870-5 companion standards\nIEC TS 60870-5-7 Security extensions to IEC 60870-5-101 and IEC 60870-5-104 protocols (applying IEC 62351)The IEC Technical Committee 57 has also generated companion standards:\n\nIEC 60870-5-101 Transmission Protocols - Companion standards especially for basic telecontrol tasks\nIEC 60870-5-102 Transmission Protocols - Companion standard for the transmission of integrated totals in electric power systems (this standard is not widely used)\nIEC 60870-5-103 Transmission Protocols - Companion standard for the informative interface of protection equipment\nIEC 60870-5-104 Transmission Protocols - Network access for IEC 60870-5-101 using standard transport profiles\nIEC TS 60870-5-601 Transmission protocols - Conformance test cases for the IEC 60870-5-101 companion standard\nIEC TS 60870-5-604 Conformance test cases for the IEC 60870-5-104 companion standardIEC 60870-5-101/102/103/104 are companion standards generated for basic telecontrol tasks, transmission of integrated totals, data exchange from protection equipment & network access of IEC101 respectively.\n\n - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/INTERBUS"
-      },
-      "name": "INTERBUS",
-      "groups": [
-        "Process automation protocols"
-      ],
-      "info": "INTERBUS is a serial bus system which transmits data between control systems (e.g., PCs, PLCs, VMEbus computers, robot controllers etc.) and spatially distributed I/O modules that are connected to sensors and actuators (e.g., temperature sensors, position switches).\nThe INTERBUS system was developed by Phoenix Contact and has been available since 1987. It is one of the leading Fieldbus systems in the automation industry and is fully standardized according to European Standard EN 50254 and IEC 61158.\nAt the moment, more than 600 manufacturers are involved in the implementation of INTERBUS technology in control systems and field devices. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Instabus"
-      },
-      "name": "Instabus",
-      "groups": [
-        "Building automation protocols"
-      ],
-      "info": "Instabus, is a decentralized open system to manage and control electrical devices within a facility. It is developed by Berker, Gira, Jung, Merten and Siemens AG. There are about 200 companies of electrical supplies using this communication protocol. The European Installation Bus (EIB) allows all electrical components to be interconnected through an electrical bus. Every component is able to send commands to other components, no matter where they are. A typical EIB network is made of electrical components such as switches, pulsers, electric motors, electrovalves, contactors, and sensors.\nThis electrical bus is made of a 2x2x0,8mm twisted pair cable, that connects all devices within the network. The theoretical maximum number of components is 57375.\nEIB system was developed to increase power savings, security, comfort and flexibility. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Insteon"
-      },
-      "name": "Insteon",
-      "groups": [
-        "Building automation protocols"
-      ],
-      "info": "Insteon  is a home automation (domotics) technology that enables light switches, lights, thermostats, leak sensors, remote controls, motion sensors, and other electrically powered devices to interoperate through power lines, radio frequency (RF) communications, or both. It employs a dual-mesh networking topology in which all devices are peers and each device independently transmits, receives, confirm and repeats messages.  Like other home automation systems, it has been associated with the Internet of Things. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wireshark": "https://en.wikipedia.org/wiki/KNX_(standard)"
-      },
-      "name": "KNX",
-      "groups": [
-        "groups"
-      ]
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/LonTalk",
-        "wireshark": "https://wiki.wireshark.org/Protocols/CEA-709.1"
-      },
-      "name": "LonTalk",
-      "groups": [
-        "Building automation protocols",
-        "Fieldbus"
-      ],
-      "info": "LonTalk is a protocol optimized for control.  Originally developed by Echelon Corporation for networking devices over media such as twisted pair, powerlines, fiber optics, and RF. It is popular for the automation of various functions in industrial control, home automation, transportation, and buildings systems such as lighting and HVAC; see Intelligent building, the protocol has now been adopted as an open international control networking standard in the ISO/IEC 14908 family of standards.  Published through ISO/IEC JTC 1/SC 6, this standard specifies a multi-purpose control network protocol stack optimized for smart grid, smart building, and smart city applications.. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Meter-Bus"
-      },
-      "name": "M-Bus",
-      "groups": [
-        "Automatic meter reading protocols"
-      ],
-      "info": "M-Bus (Meter-Bus) is a European standard (EN 13757-2 physical and link layer, EN 13757-3 application layer) for the remote reading of water, gas or electricity meters. M-Bus is also usable for other types of consumption meters. The M-Bus interface is made for communication on two wires, making it cost-effective. A radio variant of M-Bus Wireless M-Bus is also specified in EN 13757-4.\nThe M-Bus was developed to fill the need for a system for the networking and remote reading of utility meters, for example to measure the consumption of gas or water in the home. This bus fulfills the special requirements of remotely powered or battery-driven systems, including consumer utility meters. When interrogated, the meters deliver the data they have collected to a common master, such as a hand-held computer, connected at periodic intervals to read all utility meters of a building. An alternative method of collecting data centrally is to transmit meter readings via a modem.\nOther applications for the M-Bus such as alarm systems, flexible illumination installations, heating control, etc. are suitable. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/MECHATROLINK"
-      },
-      "name": "MECHATROLINK",
-      "groups": [
-        "Process automation protocols"
-      ],
-      "info": "MECHATROLINK is an open protocol used for industrial automation, originally developed by Yaskawa and presently maintained by Mechatrolink Members Association (MMA).Mechatrolink protocol has two major variants:\n\nMECHATROLINK-II\u2014Defines protocol communication schemes through serial link equivalent to RS485 with a maximum speed of 10Mbit/s and maximum 30 slave nodes.\nMECHATROLINK-III\u2014Defines protocol communication schemes over Ethernet with a maximum speed of 100Mbit/s and maximum 62 slave nodes. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wireshark": "https://www.wireshark.org/docs/dfref/m/mqtt.html"
-      },
-      "name": "MQTT",
-      "groups": [
-        "other"
-      ],
-      "ports": [
-        "1883",
-        "8883"
-      ]
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/MTConnect"
-      },
-      "name": "MTConnect",
-      "groups": [
-        "Industrial control system protocols"
-      ],
-      "ports": [
-        "7878"
-      ],
-      "info": "MTConnect is a manufacturing technical standard to retrieve process information from numerically controlled machine tools. As explained by a member of the team that developed it, \"This standard specifies the open-source, royalty-free communications protocol based on XML and HTTP Internet technology for real-time data sharing between shopfloor equipment such as machine tools and computer systems. MTConnect provides a common vocabulary with standardized definitions for the meaning of data that machine tools generate, making the data interpretable by software applications.\" A simple, real-world example of how this tool is used to improve shop management is given by the same author. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/MTConnect"
-      },
-      "name": "MTConnect",
-      "groups": [
-        "Industrial control system protocols"
-      ],
-      "ports": [
-        "7878"
-      ],
-      "info": "MTConnect is a manufacturing technical standard to retrieve process information from numerically controlled machine tools. As explained by a member of the team that developed it, \"This standard specifies the open-source, royalty-free communications protocol based on XML and HTTP Internet technology for real-time data sharing between shopfloor equipment such as machine tools and computer systems. MTConnect provides a common vocabulary with standardized definitions for the meaning of data that machine tools generate, making the data interpretable by software applications.\" A simple, real-world example of how this tool is used to improve shop management is given by the same author. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/MTConnect"
-      },
-      "name": "MTConnect",
-      "groups": [
-        "Industrial control system protocols"
-      ],
-      "ports": [
-        "7878"
-      ],
-      "info": "MTConnect is a manufacturing technical standard to retrieve process information from numerically controlled machine tools. As explained by a member of the team that developed it, \"This standard specifies the open-source, royalty-free communications protocol based on XML and HTTP Internet technology for real-time data sharing between shopfloor equipment such as machine tools and computer systems. MTConnect provides a common vocabulary with standardized definitions for the meaning of data that machine tools generate, making the data interpretable by software applications.\" A simple, real-world example of how this tool is used to improve shop management is given by the same author. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/MelsecNet"
-      },
-      "name": "MelsecNet",
-      "groups": [
-        "Process automation protocols"
-      ],
-      "info": "MelsecNet is a protocol developed and supported by Mitsubishi Electric for data delivery. MelsecNet supports 239 networks.MelsecNet protocol has two variants. MELSECNET/H and its predecessor MELSECNET/10 use high speed and redundant functionality to give deterministic delivery of large data volumes. Both variants can use either coaxial bus type or optical loop type for transmission. Coaxial bus type uses the token bus method with overall distance of 500 metres (550 yards) but optical loop type uses the Token Ring method and can support a distance up to 30 kilometres (19 miles). MELSECNET/H can support a maximum of 19,200 bytes/frame and maximum communication speed of 25 Mbit/s. MELSECNET/10 supports 960 bytes/frame and a baud rate of 10 Mbit/s. Mitsubishi provides a manual for both the variants Melsecnet/H and MelsecNet/10. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "nmap": "https://nmap.org/nsedoc/scripts/modbus-discover.html",
-        "wiki": "https://en.wikipedia.org/wiki/Modbus",
-        "wireshark": "https://www.wireshark.org/docs/dfref/m/modbus.html"
-      },
-      "name": "Modbus",
-      "groups": [
-        "Process automation protocols",
-        "Building automation protocols",
-        "Automatic meter reading protocols",
-        "Fieldbus"
-      ],
+      "name": "DVPEN01-SL",
+      "company": "DELTA",
       "ports": [
         "502"
       ],
-      "info": "Modbus is a data communications protocol originally published by Modicon (now Schneider Electric) in 1979 for use with its programmable logic controllers (PLCs). Modbus has become a de facto standard communication protocol and is now a commonly available means of connecting industrial electronic devices.Modbus is popular in industrial environments because it is openly published and royalty-free. It was developed for industrial applications, is relatively easy to deploy and maintain compared to other standards, and places few restrictions - other than the datagram (packet) size - on the format of the data to be transmitted.\nThe Modbus protocol uses character serial communication lines, Ethernet, or the Internet protocol suite as a transport layer.\nModbus supports communication to and from multiple devices connected to the same cable or Ethernet network. For example, there can be a device that measures temperature and another device to measure humidity connected to the same cable, both communicating measurements to the same computer.\nModbus is often used to connect a plant/system supervisory computer with a remote terminal unit (RTU) in supervisory control and data acquisition (SCADA) systems in the electric power industry. Many of the data types are named from industrial control of factory devices, such as Ladder logic because of its use in driving relays: A single physical output is called a coil, and a single physical input is called a discrete input or a contact.\nThe development and update of Modbus protocols have been managed by the Modbus Organization since April 2004, when Schneider Electric transferred rights to that organization. The Modbus Organization is an association of users and suppliers of Modbus-compliant devices that advocates for the continued use of the technology. Modbus Organization, Inc. is a trade association for the promotion and development of Modbus protocol. - (wikipedia)"
+      "refs": {
+        "link_1": "https://www.deltaww.com/en-US/products/Industrial-Fieldbus-Solution/149#Product_Introduction"
+      }
     },
     {
-      "refs": {
-        "nmap": "https://nmap.org/nsedoc/scripts/fox-info.html",
-        "wireshark": "https://github.com/MartinoTommasini/foxdissector"
-      },
-      "name": "Niagara Fox",
-      "groups": [
-        "other"
-      ],
+      "name": "Do-more",
+      "company": "KOYO",
       "ports": [
-        "1911",
-        "4911"
-      ]
+        "28784"
+      ],
+      "refs": {
+        "link_1": "http://www.lsis.com/upload/customer/download/f8a96bfb-6212-4a0f-8d07-a1ba8868240f/User%27s%20Manual_XGT%20FEnet_V2.30.pdf"
+      }
     },
     {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/OPC_Unified_Architecture",
-        "wireshark": "https://wiki.wireshark.org/OPC"
-      },
-      "name": "OPC Unified Architecture (OPC UA)",
-      "groups": [
-        "Industrial control system protocols"
-      ],
+      "name": "ECL Apex20",
+      "company": "Danfoss",
       "ports": [
-        "4840"
+        "5050"
       ],
-      "info": "OPC Unified Architecture (OPC UA) is a machine to machine communication protocol for industrial automation developed by the OPC Foundation. Distinguishing characteristics are:\n\nBased on a client server communication\nFocus on communicating with industrial equipment and systems for data collection and control\nOpen - freely available and implementable under GPL 2.0 license \nCross-platform - not tied to one operating system or programming language\nService-oriented architecture (SOA)\nInherent complexity - in September 2020, the specification consisted of 3151 pages in 15 documents\nOffers security functionality for authentication, authorization, integrity and confidentiality\nIntegral information model, which is the foundation of the infrastructure necessary for information integration where vendors and organizations can model their complex data into an OPC UA namespace to take advantage of the rich service-oriented architecture of OPC UA. There are over 35 collaborations with the OPC Foundation currently. Key industries include pharmaceutical, oil and gas, building automation, industrial robotics, security, manufacturing and process control. - (wikipedia)"
+      "refs": {
+        "link_1": "https://store.danfoss.com/en/Climate-Solutions-for-heating/Electronic-Controllers-and-Monitoring-solutions/ECL-Comfort-Controllers/ECL-Apex-20%2C-Programmable-Controller%2C-24-00-V/p/087B2506"
+      }
     },
     {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Open_Automated_Demand_Response"
-      },
-      "name": "Open Automated Demand Response (OpenADR)",
-      "groups": [
-        "Process automation protocols"
-      ],
-      "info": "Open Automated Demand Response (OpenADR) is a research and standards development effort for energy management led by North American research labs and companies.  The typical use is to send information and signals to cause electrical power-using devices to be turned off during periods of high demand.\nIn its early phases, the OpenADR research was initiated by Demand Response Research Center (DRRC) which is managed by Lawrence Berkeley National Laboratory (LBNL). The specification was released in April 2009. By contrast, the related OpenHAN standard for home area networks was promoted by utilities themselves and is an attempt to reconcile various home control technologies including X10, Insteon, P1901 and HomePlug.\nAn Open Automated Demand Response (OpenADR) outreach collaborative was eventually formed in October 2010 and a related OpenADR Alliance [1] \"to accelerate the development, adoption and compliance of OpenADR standards throughout the energy industry\" and \"provide common language\" for smart meters. The effort sought publicity for its attempt to unify smart grid plans under a common standards umbrella to form a viable cleantech industry with a relatively level playing field. As NIST and NERC were committed to the OpenADR approach all along and the National Broadband Plan (United States) required (in its \"goal 6\") open access to consumer power use data by ADR providers, there was probably little doubt of the standards influence. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/OBIX"
-      },
-      "name": "Open Building Information Exchange (oBIX)",
-      "groups": [
-        "Building automation protocols"
-      ],
-      "info": "oBIX (for Open Building Information Exchange) is a standard for RESTful Web Services-based interfaces to building control systems. oBIX is about reading and writing data over a network of devices using XML and URIs, within a framework specifically designed for building automation.\nBuilding control systems include those electrical and mechanical systems that operate inside a building, including Heating and Cooling (HVAC), Security, Power Management, and Life/Safety Alarms that are in nearly all buildings as well as the myriad of special purpose systems that may be tied to particular buildings such as A/V Event Management, Theatre Lighting, Medical Gas Distribution, Fume Hoods, and many others.\noBIX is a web services interface because it does not necessarily allow deep interactions with the underlying control systems. This interface can enable communications between enterprise applications and embedded building systems as well as between two embedded building systems. Facilities and their operations to be managed as full participants in knowledge-based businesses.\noBIX is being developed within OASIS[1], the Organization for the Advancement of Structured Information Standards. Version 1.0 was completed as a committee standard in December 2006. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Open_Platform_Communications"
-      },
-      "name": "Open Platform Communications (OPC)",
-      "groups": [
-        "Industrial control system protocols"
-      ],
-      "info": "Open Platform Communications (OPC) is a series of standards and specifications for industrial telecommunication. They are based on Object Linking and Embedding (OLE) for process control.\nAn industrial automation task force developed the original standard in 1996 under the name OLE for Process Control. OPC specifies the communication of real-time plant data between control devices from different manufacturers.\nAfter the initial release in 1996, the OPC Foundation was created to maintain the standards. Since OPC has been adopted beyond the field of process control, the OPC Foundation changed the name to Open Platform Communications in 2011. The change in name reflects the applications of OPC technology for applications in building automation, discrete manufacturing, process control and others. OPC has also grown beyond its original OLE implementation to include other data transportation technologies including Microsoft Corporation's .NET Framework, XML, and even the OPC Foundation's binary-encoded TCP format. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Open_Smart_Grid_Protocol"
-      },
-      "name": "Open Smart Grid Protocol (OSGP) ",
-      "groups": [
-        "Process automation protocols"
-      ],
-      "info": "The Open Smart Grid Protocol (OSGP) is a family of specifications published by the European Telecommunications Standards Institute (ETSI) used in conjunction with the ISO/IEC 14908 control networking standard for smart grid applications. OSGP is optimized to provide reliable and efficient delivery of command and control information for smart meters, direct load control modules, solar panels, gateways, and other smart grid devices. With over 5 million OSGP based smart meters and devices deployed worldwide it is one of the most widely used smart meter and smart grid device networking standards.\n\n - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Open_metering_system"
-      },
-      "name": "Open metering system (OMS)",
-      "groups": [
-        "Automatic meter reading protocols"
-      ],
-      "info": "The open metering system of the Open Metering System Group e.V. stands for a manufacturer- and media-independent standardization for Meter-Bus (M-Bus) based communication between utility meters (electricity, gas, water, thermal energy), submetering (cold/hot water, thermal energy, heat cost allocators), and systems in the field of smart meters. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Optomux"
-      },
-      "name": "Optomux",
-      "groups": [
-        "Process automation protocols"
-      ],
-      "info": "Optomux is a serial (RS-422/RS485) network protocol originally developed by Opto 22 in 1982 which is used for industrial automation applications. Optomux is an ASCII protocol consisting of command messages and response messages containing data from an Optomux unit & contain a message checksum to ensure secure communications. The serial data      link is very reliable,      over distances up to 4,000 feet and is suitable for extreme safety applications. An Optomux system is typically made up      of three main elements:\n\nThere must be a host device to poll the Optomux brain boards.\nThere are the brain boards themselves, anywhere from one to 255 of them.\nEach Optomux brain board attaches to an I/O mounting rack, carrying the individual I/O modules. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "nmap": "https://nmap.org/nsedoc/scripts/pcworx-info.html"
-      },
-      "name": "PCWorx",
-      "groups": [
-        "other"
-      ],
+      "name": "EHV Series",
+      "company": "Hitachi",
       "ports": [
-        "1926",
-        "1962"
-      ]
+        "3004",
+        "3005",
+        "3006",
+        "3007"
+      ],
+      "refs": {
+        "link_1": "https://automation.hitachi-industrial.eu/en/products/plc/modular-series/ehv"
+      }
     },
     {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Profibus",
-        "wireshark": "https://wiki.wireshark.org/FieldbusProtocolFamily#PROFIBUS"
-      },
-      "name": "PROFIBUS",
-      "groups": [
-        "Process automation protocols",
-        "Fieldbus"
-      ],
-      "info": "Profibus (usually styled as PROFIBUS, as a portmanteau for Process Field Bus) is a standard for fieldbus communication in automation technology and was first promoted in 1989 by BMBF (German department of education and research) and then used by Siemens. It should not be confused with the Profinet standard for Industrial Ethernet.\nProfibus is openly published as part of IEC 61158. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "nmap": "https://github.com/digitalbond/Redpoint/blob/master/proconos-info.nse"
-      },
-      "name": "ProConOS",
-      "groups": [
-        "other"
-      ],
+      "name": "EMERSON ControlWave",
       "ports": [
-        "20547",
-        "41100"
-      ]
+        "1234"
+      ],
+      "refs": {
+        "link_1": "https://www.emerson.com/en-us/catalog/emerson-controlwave-micro"
+      }
     },
     {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/PieP"
-      },
-      "name": "Process Image Exchange Protocol (PieP)",
-      "groups": [
-        "Process automation protocols",
-        "Fieldbus"
-      ],
-      "info": "Process Image Exchange Protocol (PieP) is a very simple Fieldbus protocol used for process automation. It is an application layer protocol developed over TCP/IP. PieP uses method of transferring process images between I/O Devices and the PLC which makes the protocol simple to use. This protocol works just ensuring that the mirror of the input image in the PLC gets updated from the generated input image from I/O Device and the output image in the I/O device is always maintained as same as the mirror image in the PLC. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Profinet",
-        "wireshark": "https://wiki.wireshark.org/PROFINET"
-      },
-      "name": "Profinet",
-      "groups": [
-        "Fieldbus"
-      ],
+      "name": "FA-M3",
+      "company": "YOKOGAWA",
       "ports": [
-        "34962",
-        "34963",
-        "34964"
-      ],
-      "info": "Profinet (usually styled as PROFINET, as a portmanteau for Process Field Net) is an industry technical standard for data communication over Industrial Ethernet, designed for collecting data from, and controlling equipment in industrial systems, with a particular strength in delivering data under tight time constraints. The standard is maintained and supported by Profibus & Profinet International, an umbrella organization headquartered in Karlsruhe, Germany. - (wikipedia)"
-    },
-    {
-      "name": "ROC Plus Protocol",
-      "groups": [
-        "other"
+        "12289"
       ],
       "refs": {
-        "link_1": "https://www.emerson.com/documents/automation/roc-plus-protocol-specification-manual-en-6851618.pdf"
-      },
+        "link_1": "https://web-material3.yokogawa.com/IM34M06P15-03E.us.pdf"
+      }
+    },
+    {
+      "name": "FB, FBs, B1 or B1z Series",
+      "company": "FATEK Automation",
       "ports": [
-        "4000"
-      ]
+        "500"
+      ],
+      "refs": {
+        "link_1": "https://file.fatek.com/en/PLC/B1_B1z/Document/B1B1z_PLC_Catalog_en.pdf"
+      }
     },
     {
-      "refs": {
-        "wireshark": "https://wiki.wireshark.org/CANopen"
-      },
-      "name": "ROS-Industrial SimpleMessage protocol",
-      "groups": [
-        "other"
-      ],
+      "name": "FEnet",
+      "company": "LS",
       "ports": [
-        "11000",
-        "11002",
-        "50240",
-        "50241"
-      ]
+        "2004",
+        "2005"
+      ],
+      "refs": {
+        "link_1": "http://www.lsis.com/upload/customer/download/f8a96bfb-6212-4a0f-8d07-a1ba8868240f/User%27s%20Manual_XGT%20FEnet_V2.30.pdf"
+      }
     },
     {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/RAPIEnet"
-      },
-      "name": "Real-time Automation Protocols for Industrial Ethernet (RAPIEnet)",
-      "groups": [
-        "Process automation protocols"
+      "name": "FP",
+      "company": "Panasonic",
+      "ports": [
+        "9094"
       ],
-      "info": "RAPIEnet (Real-time Automation Protocols for Industrial Ethernet) is Korea's first Ethernet international standard for real-time data transmission.\n\nAn Ethernet-based industrial networking protocol  developed in-house by LSIS guarantees real-time transmission and is registered as an international standard. (IEC 61158-3-21: 2010, IEC 61158-4-21: 2010, IEC 61158-5-21: 2010, IEC 61158-6-21: 2010, IEC 61784-2: 2010, IEC 62439-7)\nAn embedded Ethernet switch with two ports enables the network expansion in a daisy chain without the need for an additional external switch, easy installation and wiring reduction.\nWith 100Mbit/s/1Gbit/s transmission speed, electrical and optical media can be used together.\nSupports transmission modes such as Unicast, Multicast and Broadcast.\nSupports \"Store & Forward\u201dand \u201cCut Through\u201d switching. - (wikipedia)"
+      "refs": {
+        "link_1": "https://www.panasonic-electric-works.com/cps/rde/xbcr/pew_eu_en/mn_63489_0050_en_fpwinpro_programming.pdf"
+      }
     },
     {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/SERCOS_III",
-        "wireshark": "https://www.wireshark.org/docs/dfref/s/sercosiii.html"
-      },
-      "name": "SERCOS",
-      "groups": [
-        "Process automation protocols"
+      "name": "FP2",
+      "company": "Panasonic",
+      "ports": [
+        "8500"
       ],
-      "info": "Sercos III is the third generation of the Sercos interface, a standardized open digital interface for the communication between industrial controls, motion devices, input/output devices (I/O), and Ethernet nodes, such as PCs. Sercos III applies the hard real-time features of the Sercos interface to Ethernet. It is based upon and conforms to the Ethernet standard (IEEE 802.3 & ISO/IEC 8802-3).  Work began on Sercos III in 2003, with vendors releasing first products supporting it in 2005. - (wikipedia)"
+      "refs": {
+        "link_1": "https://www.panasonic-electric-works.com/cps/rde/xbcr/pew_eu_en/mn_63489_0020_en_fp2.pdf"
+      }
     },
     {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Service_Request_Transport_Protocol"
-      },
-      "name": "Service Request Transport Protocol (GE-SRTP)",
-      "groups": [
-        "Process automation protocols"
+      "name": "FX3U",
+      "company": "Mitsubishi Electric",
+      "ports": [
+        "5001"
       ],
+      "refs": {
+        "link_1": "https://us.mitsubishielectric.com/fa/en/products/controllers/programmable-controllers-melsec/melsec_f-series/main-unit/main-unit-fx3u"
+      }
+    },
+    {
+      "name": "FX5U",
+      "company": "Mitsubishi Electric",
+      "ports": [
+        "1025"
+      ],
+      "refs": {
+        "link_1": "https://us.mitsubishielectric.com/fa/en/products/controllers/programmable-controllers-melsec/melsec_iqf_series/cpu-module/overview"
+      }
+    },
+    {
+      "name": "GE Fanuc Series 90, 30, RX3i, etc..",
+      "company": "Emerson Automation",
       "ports": [
         "18245",
         "18246"
       ],
-      "info": "Service Request Transport Protocol (GE-SRTP) protocol is developed by GE Intelligent Platforms (earlier GE Fanuc) for transfer of data from programmable logic controllers. The protocol is used over Ethernet almost all GE automation equipment supports the GE-SRTP protocol when equipped with an Ethernet port. Any SRTP client will be capable of reading and writing system memory of any number of remote SRTP capable devices. - (wikipedia)"
+      "refs": {
+        "link_1": "https://www.automationdirect.com/microsites/c-more/software-help/Content/357.htm"
+      }
     },
     {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/SynqNet"
-      },
-      "name": "SynqNet",
-      "groups": [
-        "Process automation protocols"
+      "name": "GE QuickPanels",
+      "company": "Emerson Automation",
+      "ports": [
+        "57176"
       ],
-      "info": "SynqNet is an industrial automation network launched in 2001 by Danaher Corporation for meeting the performance and safety requirements of machine control applications. Synqnet is built over Ethernet link and 100BASE-TX physical layer and provides a synchronous connection between various process automation devices including motion controllers, servo drives, stepper drives and I/O modules. As of September 2008, SynqNet networks are used for controlling over 400,000 axes of motion on various motion applications worldwide. SynqNet user group is formed in 2004 for enhancing the developments. - (wikipedia)"
+      "refs": {
+        "link_1": "https://www.emerson.com/en-us/automation-solutions"
+      }
     },
     {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/TTEthernet",
-        "wireshark": "https://wiki.wireshark.org/TTEthernet"
-      },
-      "name": "TTEthernet",
-      "groups": [
-        "Process automation protocols"
+      "name": "JW300 series",
+      "company": "Sharp Satellite",
+      "ports": [
+        "1025"
       ],
-      "info": "The Time-Triggered Ethernet (SAE AS6802) (also known as TTEthernet or TTE) standard defines a fault-tolerant synchronization strategy for building and maintaining synchronized time in Ethernet networks, and outlines mechanisms required for synchronous time-triggered packet switching for critical integrated applications, IMA and integrated modular architectures. SAE International has released SAE AS6802 in November 2011.\nTime-Triggered Ethernet network devices are Ethernet devices which at least implement:\n\nSAE AS6802 synchronization services for advanced integrated architectures, fail-operational and safety-critical systems\ntime-triggered traffic flow control with traffic scheduling\nper-flow policing of packet timing for time-triggered traffic\nrobust internal architecture with traffic partitioningTTEthernet network devices are standard Ethernet devices with additional capability to configure and establish robust synchronization, synchronous packet switching, traffic scheduling and bandwidth partitioning, as described in SAE AS6802. If no time-triggered traffic capability is configured or used, operate as full duplex switched Ethernet devices compliant with IEEE802.3 and IEEE802.1 standards.\nIn addition, such network devices implement other deterministic traffic classes to enable mixed-criticality Ethernet networking. Therefore, TTEthernet networks are designed to host different Ethernet traffic classes without interference.\nTTEthernet device implementation expands standard Ethernet with services to meet time-critical, deterministic or safety-relevant requirements in double- and triple-redundant configurations for advanced integrated systems.  TTEthernet switching devices are used for integrated systems and safety-related applications primarily in the aerospace, industrial controls and automotive applications.\nTTEthernet has been selected by NASA and ESA as the technology for communications between the Orion MPCV and the European Service Module, and is described by the ESA as being \"prime choice for future launchers allowing them to deploy distributed modular avionics concepts\". - (wikipedia)"
+      "refs": {
+        "link_1": "https://toyoda.jtekt.co.jp/e/products/products-list00_02.html"
+      }
     },
     {
-      "refs": {
-        "wireshark": "https://wiki.wireshark.org/Telnet"
-      },
-      "name": "Telnet",
-      "groups": [
-        "other"
+      "name": "JetNet, JetI/O, etc..",
+      "company": "Korenix",
+      "ports": [
+        "502"
       ],
+      "refs": {
+        "link_1": "https://www.korenix.com"
+      }
+    },
+    {
+      "name": "KV-3000, KV-5000 or KV-5500",
+      "company": "Keyence",
+      "ports": [
+        "8501"
+      ],
+      "refs": {
+        "link_1": "https://www.keyence.com.sg/products/controls/plc-building-block-type/kv-5000_3000/"
+      }
+    },
+    {
+      "name": "MELSEC-Q",
+      "company": "Mitsubishi Electric",
+      "ports": [
+        "4999"
+      ],
+      "refs": {
+        "link_1": "https://www.mitsubishielectric.com/fa/products/cnt/plcq/items/index.html"
+      }
+    },
+    {
+      "name": "MICREX-SX Series",
+      "company": "Fuji Electric",
+      "ports": [
+        "507"
+      ],
+      "refs": {
+        "link_1": "https://www.fujielectric-europe.com/gallery/download/download_33/ts_series_connection_manual.pdf"
+      }
+    },
+    {
+      "name": "MP Series",
+      "company": "Yaskawa",
+      "ports": [
+        "502",
+        "10000"
+      ],
+      "refs": {
+        "link_1": "https://www.yaskawa.com/products/motion/machine-controllers/mp-series"
+      }
+    },
+    {
+      "name": "MR-MQ100",
+      "company": "Mitsubishi Electric",
+      "ports": [
+        "4999"
+      ],
+      "refs": {
+        "link_1": "https://dl.mitsubishielectric.com/dl/fa/document/manual/ssc/ib0300150/ib0300150e.pdf"
+      }
+    },
+    {
+      "name": "NETWORK BOARD Ethernet RCX series",
+      "company": "Yamaha",
       "ports": [
         "23"
-      ]
-    },
-    {
+      ],
       "refs": {
-        "wireshark": "https://github.com/NozomiNetworks/tricotools"
-      },
-      "name": "Tristation",
-      "groups": [
-        "other"
-      ],
+        "link_1": "https://www.yrginc.com/Catalog/PDF/CurrentManuals/OPTION_E/ETHERNET-RCX_E_V1.07.pdf"
+      }
+    },
+    {
+      "name": "PCD",
+      "company": "SAIA",
       "ports": [
-        "1502"
+        "5050"
+      ],
+      "refs": {
+        "link_1": "https://sbc-support.com/en/services/getting-started/introduction/introduction-to-pcd-classic.html"
+      }
+    },
+    {
+      "name": "QJ71E71",
+      "company": "Mitsubishi Electric",
+      "ports": [
+        "5002"
+      ],
+      "refs": {
+        "link_1": "https://eu3a.mitsubishielectric.com/fa/en/dl/12468/QJ71E71_-_Users_Manual_(Basic)_SH(NA)-080009-U_(02.19).pdf"
+      }
+    },
+    {
+      "name": "RS Automation X8 Series",
+      "ports": [
+        "50000"
+      ],
+      "refs": {
+        "link_1": "https://www.manualslib.com/manual/1771507/Rs-Automation-X8-Series.html"
+      }
+    },
+    {
+      "name": "S-DIAS",
+      "company": "SIGMATEK",
+      "ports": [
+        "1956"
+      ],
+      "refs": {
+        "link_1": "https://www.sigmatek-automation.com/en/products/io-systems/s-dias/"
+      }
+    },
+    {
+      "name": "S7-200, S7-300, S7-1200, S7-1500, etc..",
+      "company": "Siemens",
+      "ports": [
+        "102"
+      ],
+      "refs": {
+        "link_1": "https://www.manualslib.com/manual/1580661/Siemens-Simatic-S7.html"
+      }
+    },
+    {
+      "name": "SMC 3010",
+      "company": "Yaskawa",
+      "ports": [
+        "23"
+      ],
+      "refs": {
+        "link_1": "https://www.yaskawa.com"
+      }
+    },
+    {
+      "name": "SYSMAC CP, CS/CJ Series",
+      "company": "Omron",
+      "ports": [
+        "9600"
+      ],
+      "refs": {
+        "link_1": "https://www.omron.com/global/en/"
+      }
+    },
+    {
+      "name": "SYSMAC NJ Series",
+      "company": "Omron",
+      "ports": [
+        "44818"
+      ],
+      "refs": {
+        "link_1": "https://assets.omron.eu/downloads/manual/en/v4/w506_nx_nj-series_cpu_unit_built-in_ethernet_ip_port_users_manual_en.pdf"
+      }
+    },
+    {
+      "name": "Sielco Sistemi Winlog",
+      "company": "Sielco Sistemi",
+      "ports": [
+        "46824"
       ]
     },
     {
-      "name": "Unitronics",
-      "groups": [
-        "other"
-      ],
+      "name": "TI505",
+      "company": "Siemens",
       "ports": [
+        "1505"
+      ]
+    },
+    {
+      "name": "TOTALFLOW FCU",
+      "company": "ABB",
+      "ports": [
+        "10000"
+      ],
+      "refs": {
+        "link_1": "https://library.e.abb.com/public/71867eb0517ee4628525723b007db5bb/6713%20FCU%20(AC).pdf"
+      }
+    },
+    {
+      "name": "TOYOPUC PC10 series",
+      "company": "JTEKT",
+      "ports": [
+        "1025"
+      ],
+      "refs": {
+        "link_1": "https://toyoda.jtekt.co.jp/e/products/products-list00_02.html"
+      }
+    },
+    {
+      "name": "Trio RTU",
+      "ports": [
+        "502"
+      ]
+    },
+    {
+      "name": "TwinCAT",
+      "company": "beckhoff",
+      "ports": [
+        "48898",
+        "48899"
+      ],
+      "refs": {
+        "link_1": "https://infosys.beckhoff.com/"
+      }
+    },
+    {
+      "name": "TwinCAT 2",
+      "company": "beckhoff",
+      "ports": [
+        "801",
+        "811",
+        "821",
+        "831"
+      ],
+      "refs": {
+        "link_1": "https://infosys.beckhoff.com/"
+      }
+    },
+    {
+      "name": "TwinCAT 3",
+      "company": "beckhoff",
+      "ports": [
+        "851",
+        "852",
+        "853",
+        "854"
+      ],
+      "refs": {
+        "link_1": "https://infosys.beckhoff.com/"
+      }
+    },
+    {
+      "name": "VIPA 200S",
+      "ports": [
+        "102"
+      ],
+      "refs": {
+        "link_1": "https://www.vipa.com"
+      }
+    },
+    {
+      "name": "VIPA 300S",
+      "ports": [
+        "102"
+      ],
+      "refs": {
+        "link_1": "https://www.vipa.com"
+      }
+    },
+    {
+      "name": "XCX 300",
+      "company": "Schneider",
+      "ports": [
+        "20547"
+      ],
+      "refs": {
+        "link_1": "https://www.manualslib.com/manual/1527700/Schleicher-Xcx-300.html#product-XCx%20300"
+      }
+    },
+    {
+      "name": "unknown-1",
+      "company": "CD Automation",
+      "ports": [
+        "502"
+      ],
+      "refs": {
+        "link_1": "https://www.cdautomation.com"
+      }
+    },
+    {
+      "name": "unknown-10",
+      "company": "Red Lion",
+      "ports": [
+        "789"
+      ],
+      "refs": {
+        "link_1": "https://www.redlion.net/sites/default/files/1288/4198/Crimson%203%20Manual%20English%20%28Revision%203.4%29%205612KB_0.pdf"
+      }
+    },
+    {
+      "name": "unknown-2",
+      "company": "Wago",
+      "ports": [
+        "1740",
+        "2455"
+      ],
+      "refs": {
+        "link_1": "https://www.wago.com/"
+      }
+    },
+    {
+      "name": "unknown-3",
+      "company": "Elsist",
+      "ports": [
+        "502"
+      ],
+      "refs": {
+        "link_1": "https://www.elsist.biz/en/product-tag/modbus-tcp-ip/"
+      }
+    },
+    {
+      "name": "unknown-4",
+      "company": "ODVA",
+      "ports": [
+        "44818"
+      ],
+      "refs": {
+        "link_1": "https://www.odva.org/wp-content/uploads/2020/05/PUB00213R0_EtherNetIP_Developers_Guide.pdf"
+      }
+    },
+    {
+      "name": "unknown-5",
+      "company": "Schneider",
+      "ports": [
+        "502"
+      ],
+      "refs": {
+        "link_1": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=ATV12_Modbus_EN_BBV28590_02.pdf&p_Doc_Ref=BBV28590"
+      }
+    },
+    {
+      "name": "unknown-6",
+      "company": "Schneider",
+      "ports": [
+        "1740",
+        "1741",
+        "1742",
+        "1743"
+      ],
+      "refs": {
+        "link_1": "https://www.se.com/ww/en/"
+      }
+    },
+    {
+      "name": "unknown-7",
+      "company": "Toshiba",
+      "ports": [
+        "502"
+      ],
+      "refs": {
+        "link_1": "https://www.toshiba.com/tic/"
+      }
+    },
+    {
+      "name": "unknown-8",
+      "company": "Unitronics",
+      "ports": [
+        "502",
         "20256",
         "20257",
         "20258",
@@ -1913,101 +1561,22 @@
         "20261",
         "20262",
         "20263"
-      ]
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Universal_powerline_bus"
-      },
-      "name": "Universal Powerline Bus (UPB)",
-      "groups": [
-        "Building automation protocols"
       ],
-      "info": "Universal Powerline Bus (UPB) is a proprietary software protocol developed by Powerline Control Systems for power-line communication between devices used for home automation. Household electrical wiring is used to send digital data between UPB devices via pulse-position modulation.Communication is peer to peer, with no central controller necessary.UPB addressing allows 250 devices per house and 250 houses per transformer, allowing over 62,500 total device addresses and can co-exist with other powerline carrier systems within the same home.As of 2018, UPB enjoys one of the broadest range of device types when compared to most protocols and has support from some major manufacturers in the home automation space. Most notably, Leviton and their Omni series of home automation products, as well as the UPB devices they market. UPB is also supported by many major home automation software manufacturers. A few of which are listed below. - (wikipedia)"
+      "refs": {
+        "link_1": "https://www.unitronicsplc.com"
+      }
     },
     {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Very_Simple_Control_Protocol"
-      },
-      "name": "Very Simple Control Protocol (VSCP)",
-      "groups": [
-        "Building automation protocols"
-      ],
-      "info": "The Very Simple Control Protocol (VSCP)  is a free automation protocol suitable for all sorts of automation task where building- or home-automation is in the main focus.\nIts main advantage is that each VSCP-node can work completely autonomous, being part of distributed network of other nodes.\nVSCP is independent from the physical layer (e.g. CAN bus, Ethernet, RS-485, RS-232, MiWi) connecting the individual nodes to form the automation network bus. On the bus there can be nodes reading switches, controlling lighting, blinds, windows or information displays, broadcasting physical measurements (e.g. temperature, luminosity, power consumption, etc.), multimedia control, burglar- or fire-alarm, etc.\nThere is a subset of the protocol (Level I) that is very much tailored to the CAN bus and resource restricted microcontrollers. Protocol Level II is designed for Ethernet (UDP, TCP and own Ethernet-type Raw-Ethernet) and wireless physical layers. All share the same common message fields and framework and can be connected through gateways. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/X10_(industry_standard)"
-      },
-      "name": "X10",
-      "groups": [
-        "Building automation protocols"
-      ],
-      "info": "X10 is a protocol for communication among electronic devices used for home automation (domotics). It primarily uses power line wiring for signaling and control, where the signals involve brief radio frequency bursts representing digital information. A wireless radio-based protocol transport is also defined.\nX10 was developed in 1975 by Pico Electronics of Glenrothes, Scotland, in order to allow remote control of home devices and appliances. It was the first general purpose domotic network technology and remains the most widely available.Although a number of higher-bandwidth alternatives exist, X10 remains popular in the home environment with millions of units in use worldwide, and inexpensive availability of new components. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Z-Wave",
-        "wireshark": "https://github.com/dottedmag/wireshark-zwave"
-      },
-      "name": "Z-Wave",
-      "groups": [
-        "Building automation protocols"
-      ],
-      "info": "Z-Wave is a wireless communications protocol used primarily for home automation. It is a mesh network using low-energy radio waves to communicate from appliance to appliance, allowing for wireless control of residential appliances and other devices, such as lighting control, security systems, thermostats, windows, locks, swimming pools, and garage door openers. Like other protocols and systems aimed at the home and office automation market, a Z-Wave system can be controlled via the Internet from a smart phone, tablet, or computer, and locally through a smart speaker, wireless keyfob, or wall-mounted panel with a Z-Wave gateway or central control device serving as both the hub controller and portal to the outside. Z-Wave provides the application layer interoperability between home control systems of different manufacturers that are a part of its alliance. There are a growing number of interoperable Z-Wave products; over 1,700 in 2017, and over 2,600 by 2019. - (wikipedia)"
-    },
-    {
-      "refs": {
-        "wireshark": "https://en.wikipedia.org/wiki/Zigbee"
-      },
-      "name": "Zigbee",
-      "groups": [
-        "groups"
-      ]
-    },
-    {
-      "refs": {
-        "wireshark": "https://wiki.wireshark.org/IEEE_802.15.4"
-      },
-      "name": "Zigbee IP",
-      "groups": [
-        "Building automation protocols"
-      ],
+      "name": "unknown-9",
+      "company": "Digi",
       "ports": [
-        "17754",
-        "17755",
-        "17756"
-      ]
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/Zigbee#Zigbee_Smart_Energy_2.0"
-      },
-      "groups": [
-        "Automatic meter reading protocols",
-        "Zigbee"
+        "771",
+        "1027",
+        "2101"
       ],
-      "name": "Zigbee Smart Energy",
-      "info": "Zigbee is an IEEE 802.15.4-based specification for a suite of high-level communication protocols used to create personal area networks with small, low-power digital radios, such as for home automation, medical device data collection, and other low-power low-bandwidth needs, designed for small scale projects which need wireless connection. Hence, Zigbee is a low-power, low data rate, and close proximity (i.e., personal area) wireless ad hoc network.\nThe technology defined by the Zigbee specification is intended to be simpler and less expensive than other wireless personal area networks (WPANs), such as Bluetooth or more general wireless networking such as Wi-Fi. Applications include wireless light switches, home energy monitors, traffic management systems, and other consumer and industrial equipment that requires short-range low-rate wireless data transfer.\nIts low power consumption limits transmission distances to 10\u2013100 meters line-of-sight, depending on power output and environmental characteristics. Zigbee devices can transmit data over long distances by passing data through a mesh network of intermediate devices to reach more distant ones. Zigbee is typically used in low data rate applications that require long battery life and secure networking. (Zigbee networks are secured by 128 bit symmetric encryption keys.) Zigbee has a defined rate of 250 kbit/s, best suited for intermittent data transmissions from a sensor or input device.\nZigbee was conceived in 1998, standardized in 2003, and revised in 2006. The name refers to the waggle dance of honey bees after their return to the beehive. - (wikipedia)"
-    },
-    {
       "refs": {
-        "wireshark": "https://www.wireshark.org/docs/dfref/k/knx.html"
-      },
-      "name": "h1",
-      "groups": [
-        "other"
-      ]
-    },
-    {
-      "refs": {
-        "wiki": "https://en.wikipedia.org/wiki/XAP_Home_Automation_protocol"
-      },
-      "name": "xAP",
-      "groups": [
-        "Building automation protocols"
-      ],
-      "info": "xAP is an open protocol used for home automation and supports integration of telemetry and control devices primarily within the home. Common communications networks include RS232, RS485, Ethernet and wireless. xAP protocol always uses broadcast for sending the messages. All the receivers listens to the message and introspects the message header to verify whether the message is of its interest. xAP protocol has the following key advantages.\n\nIt makes use of existing infrastructure wherever possible (for example it can co-exist with various physical layers like RS232 or wireless LAN)\nIt can even intercommunicate between multiple networks like RS232 or wireless by just deploying a physical bridge.\nxAP does not require any central controller. All nodes can act as sender or receiver.\nxAP system provides distributed and fault tolerant architecture which allows continuous operation of systems even in the event of component failures. - (wikipedia)"
+        "link_1": "https://www.yrginc.com/Catalog/PDF/CurrentManuals/OPTION_E/ETHERNET-RCX_E_V1.07.pdf"
+      }
     }
   ]
 }
