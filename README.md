@@ -38,7 +38,7 @@ An update metadata of Automation Protocols (Industrial control system, process a
 ```
 
 ### Integration Example (ics-visualizer)
-<img src="https://raw.githubusercontent.com/qeeqbox/ics-visualizer/main/readme/intro.gif" style="max-width:768px"/>
+- [ics-visualizer](https://qeeqbox.github.io/ics-visualizer/)
 
 ### Notes
 - Automation protocols metadata db was compiled using my previous experience with ICS and a lot of great external articles\\researches\\projects (Do not forget to check them out!)
