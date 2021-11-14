@@ -26,16 +26,14 @@ An update metadata of Automation Protocols (Industrial control system, process a
 ### Entry example (sub)
 ```json
 {
-  "refs": {
-    "wireshark": "https://wiki.wireshark.org/Contrib"
-  },
-  "name": "Crimson V3",
-  "groups": [
-    "other"
-  ],
+  "name": "SYSMAC NJ Series",
+  "company": "Omron",
   "ports": [
-    "789"
-  ]
+    "44818"
+  ],
+  "refs": {
+    "link_1": "https://assets.omron.eu/downloads/manual/en/v4/w506_nx_nj-series_cpu_unit_built-in_ethernet_ip_port_users_manual_en.pdf"
+  }
 }
 ```
 
